@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <!-- Код для підключення з сайту гугл аналітики -->
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8T2XGF9QJB"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8T2XGF9QJB');
+  </script>
+  
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Підключення шрифту-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Підключаю файл зі стилями сайту-->
+    <link href="./src/css/styles.css" rel="stylesheet" type="text/css" />
+    <!-- Підключення стилів слайдеру -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <title>Coconut</title>
+    <!--Мета теги для просування сайту -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+  </head>
+  <body>
+
+<!-- Меню сайту -->
+
+    <header>
+      <div class="content-container">
+        <div class="header">
+          <img
+            class="logo"
+            src="./src/images/logo.png"
+            alt="coconut logo"
+            width="80px"
+            height="80px"
+          />
+          <nav>
+            <ul class="navigation-list">
+              <li><a href="#about">О нас</a></li>
+              <li><a href="#main-block">Послуги</a></li>
+              <li><a href="#reviews">Відгуки</a></li>
+              <li><a href="#contacts" class="primary-button">Контакти</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="main-block" id="main-block">
+      <div class="content-container">
+        <p class="main-block__quote">
+          Забудь про буденність - насолоджуйся розкішними нігтями від салону
+          COCONUT!
+        </p>
+        <h1 class="main-block__title">Естетичний простір нігтів</h1>
+
+        <ul class="main-block__list">
+          <li>
+            <img
+              src="./src/images/main-picture-1.jpg"
+              alt="working place"
+               width="100%"
+            />
+            <h2 class="main-block-item__title">Нарощування нігтів</h2>
+            <p class="main-block-item__about">
+              Наші майстри використовують техніки нарощування нігтів, щоб додати
+              довжину, форму та стиль до твоїх нігтів. Від природного до
+              вишуканого - ми зробимо твої нігті неймовірно привабливими!
+            </p>
+            <a href="#" class="primary-button">Подробиці</a>
+          </li>
+          <li>
+            <img
+              src="./src/images/main-picture-2.jpg"
+              alt="manicure"
+              class="main-block__picture"
+            />
+            <h2 class="main-block-item__title">Японський манікюр</h2>
+            <p class="main-block-item__about">
+              Вишукане мистецтво догляду за нігтями, яке використовує натуральні
+              матеріали для створення здорового і природного вигляду. Ця техніка
+              включає в себе застосування спеціальних мас і лаків, збагачених
+              кальцієм та іншими корисними компонентами, які живлять і зміцнюють
+              нігтьову пластину.
+            </p>
+            <a href="#" class="primary-button">Подробиці</a>
+          </li>
+          <li>
+            <img
+              src="./src/images/main-picture-3.jpg"
+              alt="happy women"
+              class="main-block__picture"
+            />
+            <h2 class="main-block-item__title">Гелеве покриття</h2>
+            <p class="main-block-item__about">
+              Наші спеціалісти використовують найсучасніші гель-лаки, щоб
+              забезпечити твоїм нігтям ідеальний блиск і стійкість.
+            </p>
+            <a href="#" class="primary-button">Подробиці</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+<!-- Секція Про Нас -->
+
+    <section class="about" id="about">
+      <div class="content-container">
+        <h2 class="primary-title">О нас</h2>
+        <p class="about-us">
+          Ми - команда професіоналів, які пристрасно закохані у мистецтво
+          догляду за нігтями. Наше завдання - дарувати вам не лише красу, але й
+          дотепну гру нюансів, вражаючий стиль і повне задоволення від кожного
+          відвідання. Від класичних манікюрів до найсучасніших трендів у світі
+          нейл-арту - ми завжди готові зробити кожен ваш візит незабутнім.
+        </p>
+      </div>
+    </section>
+
+<!-- Секція Чому Ми -->
+
+    <section class="why-we" >
+      <div class="content-container">
+        <h2 class="title">Чому ми?</h2>
+        <ul class="pros-list">
+          <li>
+            <div class="list-container">
+              <span class="circle">1</span>
+              <div class="text-wrapper">
+                <h3 class="why-we-name">Професійність</h3>
+                <p class="why-we-quote">
+                  Наші майстри - справжні фахівці з роками досвіду та вміннями,
+                  готові забезпечити вам найвищу якість обслуговування.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="list-container">
+              <span class="circle">2</span>
+              <div class="text-wrapper">
+                <h3 class="why-we-name">Якість</h3>
+                <p class="why-we-quote">
+                  Ми використовуємо тільки найкращі матеріали і продукти, щоб
+                  ваш манікюр був стійким, бездоганним і доглянутим.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="list-container">
+              <span class="circle">3</span>
+              <div class="text-wrapper">
+                <h3 class="why-we-name">Творчість</h3>
+                <p class="why-we-quote">
+                  Від класичних дизайнів до найсміливіших ідеїй нейл-арту - ми
+                  готові втілити будь-яку вашу фантазію в реальність.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="list-container">
+              <span class="circle">4</span>
+              <div class="text-wrapper">
+                <h3 class="why-we-name">Комфорт</h3>
+                <p class="why-we-quote">
+                  Відпочиньте і розслабтеся в нашій затишній атмосфері, де кожен
+                  клієнт - це наш гість, а ваш комфорт - наш пріоритет.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="list-container">
+              <span class="circle">5</span>
+              <div class="text-wrapper">
+                <h3 class="why-we-name">Індивідуальний підхід</h3>
+                <p class="why-we-quote">
+                  У нас ви отримаєте увагу, яка повністю відповідає вашим
+                  потребам і побажанням.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="list-container">
+              <span class="circle">6</span>
+              <div class="text-wrapper">
+                <h3 class="why-we-name">Гарантія задоволення</h3>
+                <p class="why-we-quote">
+                  Наша мета - не просто задовольнити ваші очікування, а
+                  перевершити їх. Ми гарантуємо, що кожне відвідування у нас
+                  залишить вас захопленими і бажаючими повертатися знову і
+                  знову, отримуючи н
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+<!-- Секція відгуків -->
+
+    <section class="reviews" id="reviews">
+      <div class="content-container">
+        <h2 class="title">Відгуки наших клієнтів</h2>
+        <div class="slick-slider">
+          <div>
+            <p class="slider-quote">
+              Це місце, куди я завжди повертаюся! Вони завжди дбають про мої
+              нігті так, ніби це їх власні. Я ціную їхній професіоналізм і
+              рекомендую цей салон усім своїм друзям і родичам
+            </p>
+            <img
+              src="./src/images/Koroleva.jpg"
+              alt="Hanna Koroleva"
+              class="slider-photo"
+            />
+            <span class="slider-name">Ганна Королева</span>
+          </div>
+          <div>
+            <p class="slider-quote">
+              "Я завжди шукала ідеальний салон манікюру, і нарешті знайшла його!
+              Професійний підхід, уважність до деталей і неймовірна якість
+              послуг - це те, що робить цей салон неперевершеним. Рекомендую
+              всім
+            </p>
+            <img
+              src="./src/images/Milina.jpg"
+              alt="Lisa Milina"
+              class="slider-photo"
+            />
+            <span class="slider-name">Елизавета Милина</span>
+          </div>
+          <div>
+            <p class="slider-quote">
+              Я вже давно ходжу до цього салону і не можу сказати достатньо
+              хороших слів про їхню роботу. Майстри завжди творчі, уважні та
+              професійні. Я залишаюся від них захопленою кожного разу!
+            </p>
+            <img
+              src="./src/images/Mars.jpg"
+              alt="Sofiia Mars"
+              class="slider-photo"
+            />
+            <span class="slider-name">Софія Марс</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Секція контактів та форми зворотнього зв'язку -->
+
+    <section class="contacts" id="contacts">
+      <div class="content-container">
+        <h2 class="title">Наши контакти</h2>
+        <div class="contact-wrapper">
+          <div class="contacts-items">
+            <div>
+              <a href="tel:+380983734845" class="contact-text"
+                >Телефон: +380983734845</a
+              >
+              <a href="mailto:hello@firm.com" class="contact-text"
+                >Почта: <span>hello@firm.com</span></a
+              >
+            </div>
+            <span class="address">Семена Палія 23</span>
+            <ul class="socials">
+              <li><a href="#"><svg
+                  class="t-sociallinks__svg"
+                  role="presentation"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M90 58.8676V88.444H72.8529V60.8481C72.8529 53.9164 70.3722 49.1856 64.1669 49.1856C59.429 49.1856 56.6096 52.374 55.3686 55.4587C54.9159 56.5614 54.7992 58.0965 54.7992 59.6388V88.444H37.6463C37.6463 88.444 37.877 41.7061 37.6463 36.8644H54.7963V44.1753C54.7617 44.2301 54.717 44.2891 54.6839 44.3425H54.7963V44.1753C57.0752 40.6654 61.1443 35.6522 70.2526 35.6522C81.5403 35.6522 90 43.025 90 58.8676ZM19.705 12C13.837 12 10 15.8486 10 20.9108C10 25.8621 13.7275 29.8274 19.4787 29.8274H19.5926C25.5745 29.8274 29.2933 25.8621 29.2933 20.9108C29.1809 15.8486 25.5745 12 19.705 12ZM11.0191 88.444H28.1647V36.8644H11.0191V88.444Z"
+                    fill="#ff5c33"
+                  ></path></a>
+                </svg>
+              </li>
+              <li><a href="#"><svg
+                  class="t-sociallinks__svg"
+                  role="presentation"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M83.1797 17.5886C83.1797 17.5886 90.5802 14.7028 89.9635 21.711C89.758 24.5968 87.9079 34.6968 86.4688 45.6214L81.5351 77.9827C81.5351 77.9827 81.124 82.7235 77.4237 83.548C73.7233 84.3724 68.173 80.6623 67.145 79.8378C66.3227 79.2195 51.7273 69.9438 46.5878 65.4092C45.1488 64.1724 43.5042 61.6989 46.7934 58.8132L68.3785 38.201C70.8454 35.7274 73.3122 29.956 63.0336 36.9642L34.2535 56.5459C34.2535 56.5459 30.9644 58.6071 24.7973 56.752L11.4351 52.6295C11.4351 52.6295 6.50135 49.5377 14.9298 46.4457C35.4871 36.7579 60.7724 26.864 83.1797 17.5886Z"
+                    fill="#ff5c33"
+                  ></path></a>
+                </svg>
+              </li>
+              <li><a href="#"><svg
+                  class="t-sociallinks__svg"
+                  role="presentation"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M50.168 10C60.8239 10.004 70.8257 14.1522 78.346 21.6819C85.8676 29.2114 90.0066 39.2185 90 49.8636C89.9906 71.8252 72.1203 89.6956 50.1668 89.6956H50.1508C43.4852 89.6929 36.9338 88.0208 31.1162 84.8468L10 90.3853L15.6516 69.7437C12.1665 63.7042 10.3323 56.851 10.3349 49.8304C10.343 27.8676 28.2134 10 50.168 10V10ZM61.5376 54.7631C62.4507 55.0954 67.3433 57.5023 68.3389 58.0009C68.5313 58.0971 68.7113 58.1842 68.8784 58.265C69.5753 58.602 70.0458 58.8296 70.2462 59.1651C70.4947 59.5799 70.4947 61.5736 69.6654 63.8982C68.8359 66.2229 64.8605 68.3442 62.9478 68.63C61.2319 68.8865 59.0627 68.9928 56.6782 68.2353C55.2322 67.7767 53.3794 67.1653 51.0041 66.1392C41.6698 62.1082 35.3628 53.06 34.1747 51.3556C34.0919 51.2368 34.0341 51.1538 34.0017 51.1106L33.9981 51.1056C33.486 50.4243 29.9372 45.7022 29.9372 40.8149C29.9372 36.2325 32.1873 33.8303 33.2244 32.7232C33.2961 32.6467 33.3619 32.5763 33.4208 32.5118C34.3341 31.5149 35.412 31.2664 36.0751 31.2664C36.7385 31.2664 37.4029 31.2717 37.9826 31.301C38.0541 31.3046 38.1286 31.304 38.2056 31.3037C38.786 31.3001 39.5087 31.2957 40.2221 33.0089C40.4976 33.6707 40.9012 34.653 41.3265 35.6882C42.1818 37.7702 43.1251 40.066 43.2912 40.399C43.5397 40.8974 43.7058 41.4782 43.3736 42.1427C43.323 42.2436 43.2763 42.3387 43.2318 42.4295C42.9831 42.9364 42.7995 43.3104 42.378 43.8029C42.2125 43.9963 42.0413 44.2045 41.8703 44.4131C41.5273 44.8309 41.1842 45.2488 40.8853 45.5467C40.387 46.0425 39.8686 46.5808 40.4493 47.5777C41.0303 48.5731 43.028 51.8323 45.9867 54.472C49.1661 57.3091 51.93 58.5078 53.3318 59.1157C53.6058 59.2346 53.8279 59.3308 53.9907 59.4124C54.9849 59.9109 55.5658 59.8284 56.1465 59.1637C56.7274 58.4993 58.6347 56.2583 59.298 55.2615C59.9612 54.2646 60.6259 54.4307 61.5376 54.7631V54.7631Z"
+                    fill="#ff5c33"
+                  ></path></a>
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <form name="login_form" class="login_form">
+            <input required class="input" type="email" name="email" placeholder="E-mail" /><br /><br />
+            <input required class="input" type="name" name="name" placeholder="Имя" /><br /><br /> 
+            <textarea class="input big" placeholder="Сообщение" name="text" id="" cols="30" rows="10"></textarea>
+            <br /><br />
+            <input type="submit" value="Відправити" class="primary-button form"/>
+          </form>
+        </div>
+      </div>
+    </section>
+
+<!-- Підключення файлів слайдеру у відгуках -->
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".slick-slider").slick({ arrows: true, dots: true });
+      });
+    </script>
+  </body>
+</html>
