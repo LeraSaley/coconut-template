@@ -1,0 +1,531 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul,
+ol {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+html{
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+   
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul,
+ol {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Загальні стилі */
+body{
+    font-family: "Roboto",Arial, sans-serif;
+    font-style: normal;
+    line-height: 1.23;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.content-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px; 
+}
+
+ @media screen and (max-width:980px) {
+    .content-container{
+        max-width: 600px;
+    }
+ }
+
+ @media screen and (max-width:640px) {
+     .content-container {
+         max-width: 640px;
+     }
+ }
+
+ /* Стилі заголовків та кнопок */
+.primary-button {
+    padding: 8px 30px;
+    color: #ffffff;
+    background-color: #eb633d;
+    width: fit-content;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.primary-button:hover,
+.primary-button:focus {
+    color: #eb633d;
+    background-color: #eb633d48;
+}
+
+@media screen and (max-width:980px) {
+    .primary-button {
+        margin-top: 40px;
+    }
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+@media screen and (max-width:640px) {
+    .title {
+        font-size: 38px;
+        margin-bottom: 50px;
+    }
+}
+
+.primary-title {
+    font-size: 42px;
+    padding-bottom: 50px;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #ffffff;
+}
+
+@media screen and (max-width:640px) {
+    .primary-title {
+        font-size: 30px;
+    }
+}
+
+ /* Стилі меню */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+ @media screen and (max-width:980px) {
+     .header {
+         flex-direction: column;
+     }
+ }
+
+ @media screen and (max-width:980px) {
+     .logo{
+         padding: 20px;
+         margin-bottom: 40px;
+     }
+
+ }
+
+.navigation-list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #000000;
+    font-weight: 500;
+}
+ @media screen and (max-width:980px) {
+     .navigation-list {
+         flex-direction: column;
+         gap: 20px;
+     }
+ }
+
+
+/* Стилі головного блоку*/
+.main-block{
+    margin-top: 130px;
+}
+
+.main-block__quote{
+    font-size: 64px;
+    line-height: 1.23;
+    font-weight: 600;
+    color: #000000;
+    text-align: left;
+    max-width: 760px;
+}
+
+@media screen and (max-width:980px) {
+    .main-block__quote {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .main-block__quote {
+        font-size: 30px;
+        max-width: 100%;
+    }
+}
+
+.main-block__title{
+    margin-top: 41px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #8a8a8a;
+}
+
+.main-block__list{
+    margin-top: 210px;
+    margin-bottom: 195px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width:980px) {
+    .main-block__list {
+       flex-direction: column;
+    }
+}
+
+.main-block__list li{
+    width: 33.33%;
+    height: 100%;
+    padding: 10px;
+}
+
+@media screen and (max-width:980px) {
+    .main-block__list li {
+        width: 100%;
+    }
+}
+
+.main-block-item__title{
+    margin-bottom: 12px;
+    margin-top: 27px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+}
+@media screen and (max-width:980px) {
+    .main-block-item__title {
+        margin-top: 20px;
+    }
+}
+
+.main-block-item__about{
+    margin-top: 17px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 1.55;
+    font-weight: 300;
+    color: #8a8a8a;
+}
+
+/* Стилі секції Про Нас */
+
+.about{
+    background-image:linear-gradient(to top,
+            rgba(64, 26, 0, 0.80),
+            rgba(6, 17, 31, 0.80)),url(../images/about.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% contain;
+            background-position: center;
+
+    height: 748px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+@media screen and (min-width:1200px) {
+    .about {
+        background-size: cover;
+        background-position: top;
+    }
+}
+
+.about-us{
+    padding: 43px 50px 0 50px;
+    font-size: 22px;
+    line-height: 1.55;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+@media screen and (max-width:640px) {
+    .about-us {
+        font-size: 18px;
+    }
+}
+
+/* Стилі секції Чому ми */
+
+.why-we{
+    padding-top: 195px;
+    padding-bottom: 180px;
+}
+
+.pros-list{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 50px 0;
+justify-content: center;
+}
+
+@media screen and (max-width:980px) {
+    .pros-list {
+        flex-direction: column;
+    }
+}
+
+ .list-container{
+    display: flex;
+    flex-direction: row;
+    width: 340px;
+    margin: 0 20px;
+    
+ }
+
+ @media screen and (max-width:980px) {
+     .list-container {
+         width: 100%;
+         margin: 0;
+     }
+ }
+
+ .circle{
+    display: flex;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #eb633d;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+ }
+ @media screen and (max-width:980px) {
+     .circle {
+        width: 40px;
+        height: 40px;
+     }}
+
+ .text-wrapper{
+    padding-left: 20px;
+ }
+
+ .why-we-name{
+    font-size: 18px;
+    line-height: 1.35;
+    font-weight: 600;
+    padding-bottom: 13px;
+ }
+
+ .why-we-quote{
+    font-size: 16px;
+    line-height: 1.55;
+    font-weight: 300;
+ }
+
+ /* Стилі секції Відгуки клієнтів */
+
+ .reviews{
+    background-color: #ebebeb;
+    padding-top: 165px;
+    padding-bottom: 120px;
+    padding-left: 30px;
+    padding-right: 30px;
+ }
+
+ .slick-slide{
+    margin-top: 50px;
+ }
+
+ .slider-quote{
+    margin-bottom: 36px;
+    font-size: 22px;
+    line-height: 1.55;
+    font-weight: 300;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+ }
+
+ .slider-photo{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+ }
+
+ .slider-name{
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 1.35;
+    font-weight: 600;
+    text-align: center;
+ }
+
+ .slick-prev:before,.slick-next:before,.slick-dots li button:before{
+    color: #eb633d !important;
+ }
+
+ /* Стилі секції Contacts */
+
+ .contacts{
+    padding: 150px 0;
+ }
+
+ .contact-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-top: 50px;
+    
+ }
+
+ @media screen and (max-width:980px) {
+     .contact-wrapper {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+     }
+ }
+
+ .login_form{
+    max-width: 460px;
+    width: 100%;
+   
+ }
+
+.login_form .input{
+    color: #000000;
+        border: 0px solid #000;
+        background-color: #f2f2f2;
+        width: 100%;
+        padding: 26px 20px 10px 20px;
+        outline:none;
+        font-size: 16px;
+        line-height: 1.33;
+}
+
+.login_form .input.big {
+    height: 102px;
+}
+
+.primary-button.form{
+    outline: none;
+    border: none;
+}
+
+ .contacts-items{
+    width: 100%;
+    max-width: 380px;
+    padding-left: 70px;
+ }
+
+ @media screen and (max-width:980px) {
+     .contacts-items {
+         text-align: center;
+         padding-left: 0;
+     }
+ }
+
+ .contacts-items div{
+        margin-bottom: 40px;
+        font-size: 26px;
+        font-size: 26px;
+        font-weight: 300;
+ }
+
+ .contacts-items div span{
+    color: #ff8562;
+ }
+
+ .address{
+    font-size: 16px;
+    line-height: 1.55;
+    font-weight: 300;
+ }
+
+ .socials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    margin-top: 20px;
+ }
+
+ @media screen and (max-width:980px) {
+     .socials {
+         justify-content: center;
+     }
+ }
